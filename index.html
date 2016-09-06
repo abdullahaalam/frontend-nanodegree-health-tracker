@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title -->
+        <title>Health Tracker</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="img/healthy-food.png">
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="description" content="Health Tracker">
+        <meta name="author" content="Abdullah Alam">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container-fluid">
+                <div class="col-xs-12">
+                    <br>
+                    <h1>Health Tracker</h1>
+                    <br>
+                    <p>"The greatest wealth is health." - Virgil</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section -->
+        <div class="sectionInfo">
+            <div class="container-fluid">
+                <div class="col-lg-3 col-xs-6">
+                    <section class="sectionSearch">
+                        <h2>Search Food</h2>
+                        <br>
+                        <div class="searchFood">
+                            <br>
+                            <br>
+                            <br>
+                            <form action="#" class="searchForm">
+                                <input type="text" id="searchBox" class="searchBox" placeholder="Enter Food Here...">
+                                <button type="submit" id="searchButton" class="searchButton">Search</button>
+                                <span id="searchBoxAlert" class="searchBoxAlert"></span>
+                            </form>
+                        </div>
+                        <br>
+                        <h2>Search Results</h2>
+                        <br>
+                        <ul class="searchResults"></ul>
+                    </section>
+                </div>
+                <div class="col-lg-6 col-xs-6">
+                    <section class="sectionList">
+                        <h2>Select Food</h2>
+                        <br>
+                        <div id="addItem" class="addItem">
+                            <div class="foodName">
+                                <br>
+                                <h3>Food Name</h3>
+                                <div id="foodName"></div>
+                            </div>
+                            <br>
+                            <div class="foodCalorie">
+                                <br>
+                                <h3>Food Calories</h3>
+                                <div id="foodCalorie"></div>
+                            </div>
+                            <br>
+                            <div>
+                                <button id="itemSubmit" class="foodSubmitBtn" disabled>Add</button>
+                            </div>
+                        </div>
+                        <h2>List of Select Food</h2>
+                        <span id="searchAlert" class="searchBoxAlert"></span>
+                        <div class="foodsListView">
+                            <script id="foodListTemplate" type="text/template">
+                                <span class="delete">Delete</span>
+                                <span class="searchName"><%= name %></span>
+                                <span class="searchCalories"><%= calories %> Calories </span>
+                            </script>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                    <section class="totalCalories">
+                        <h2>Total Calories</h2>
+                        <br>
+                        <div class="calories-background-color">
+                            <br>
+                            <div id="totalCalories"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="col-xs-12">
+                    <br>
+                    <p>Copyright &copy; 2016 Abdullah Alam.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/libs/jquery.min.js"></script>
+        <!-- Underscore -->
+        <script src="js/libs/underscore-min.js"></script>
+        <!-- Backbone -->
+        <script src="js/libs/backbone-min.js"></script>
+        <script src="js/libs/backbone.localStorage-min.js"></script>
+        <!-- JavaScript -->
+        <script src="js/app.js"></script>
+    </body>
+</html>

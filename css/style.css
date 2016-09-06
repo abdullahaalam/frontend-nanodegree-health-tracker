@@ -1,0 +1,226 @@
+html,
+body {
+    font-family: "Indie Flower", cursive;
+    color: #fff;
+}
+
+header {
+    background: #17202a;
+    color: #fff;
+    height: 200px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+header p {
+    text-align: center;
+    font-size: 18px;
+}
+
+footer {
+    background: #17202a;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    font-size: 17px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 1em;
+    color: #fff;
+    background: #ff4040;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background: #04bb25;
+}
+
+button:disabled {
+    background: #999999;
+}
+
+.sectionInfo {
+    background: #373d49;
+    position: relative;
+    z-index: 2;
+    padding: 0 0 150px;
+}
+
+.sectionSearch {
+    background: #000;
+    color: #fff;
+    padding: 2em 1em;
+}
+
+.searchForm {
+    margin-bottom: 2em;
+}
+
+.searchBox {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 1em;
+    color: #000;
+}
+
+.searchButton {
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.searchBoxAlert {
+    display: inline-block;
+    margin: 1em 0;
+}
+
+.searchResults {
+    list-style: none;
+    padding: 0;
+}
+
+.searchResults li {
+    background: #17202a;
+    padding: 1em;
+    margin-bottom: 0.4em;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.searchResults li:hover {
+    background: #454545;
+}
+
+.searchName {
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    color: #808000;
+}
+
+.searchCalories {
+    display: block;
+    font-size: 17px;
+}
+
+.foodName, .foodCalorie {
+    text-align: left;
+    color: #f1c40f;
+}
+
+#foodName, #foodCalorie {
+    color: #808000;
+    font-size: 18px;
+}
+.sectionList {
+    background: #000;
+    padding: 1em;
+}
+
+.addItem {
+    background: #17202a;
+    padding: 0.5em 2em 2em 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.addItem h3 {
+    margin-bottom: 1em;
+}
+
+.foodSubmitBtn {
+    margin-top: 2em;
+    width: 150px;
+}
+
+.selectedResult {
+    list-style: none;
+    padding: 0;
+}
+
+.selectedItem {
+    background: #17202a;
+    padding: 1em;
+    margin-bottom: 0.4em;
+    transition: all 0.3s ease 0s;
+}
+
+.delete
+{
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    float: right;
+}
+
+.totalCalories {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 2em 1em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.calories-background-color, .searchFood {
+    background: #17202a;
+    padding: 0.5em 2em 2em 2em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sectionInfo {
+        padding-top: 40px;
+        width: 100%;
+        width: 100%;
+    }
+
+    .searchBox {
+        width: 70%;
+    }
+
+    .searchButton {
+        display: inline;
+        margin-top: 2em;
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .sectionInfo {
+        padding-top: 40px;
+        width: 100%;
+        width: 100%;
+    }
+
+    .searchBox {
+        width: 70%;
+    }
+
+    .searchButton {
+        display: inline;
+        width: 25%;
+        margin: 0 0 0 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .sectionSearch, .sectionList {
+        margin-top: 50px;
+    }
+}
