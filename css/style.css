@@ -193,7 +193,7 @@ h2 {
         width: 70%;
     }
 
-    .searchButton {
+    .searchButton, .clearButton {
         display: inline;
         margin-top: 2em;
         width: 150px;
@@ -207,13 +207,13 @@ h2 {
     }
 
     .searchBox {
-        width: 70%;
+        width: 100%;
     }
 
-    .searchButton {
+    .searchButton, .clearButton {
         display: inline;
         width: 25%;
-        margin: 0 0 0 10px;
+        margin: 10px 0 0 10px;
     }
 }
 

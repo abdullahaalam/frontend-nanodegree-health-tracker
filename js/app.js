@@ -1,3 +1,6 @@
+$('button').click(function() {
+   $('.searchResults').empty();
+});
 $(function() {
     'use strict';
     // Initialize App

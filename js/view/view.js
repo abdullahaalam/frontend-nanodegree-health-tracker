@@ -27,7 +27,7 @@ var App = App || {};
       },
       remove: function() {
         // Show alert if there is no food in list
-        if (this.$el.siblings().lenght === 0) {
+        if (this.$el.siblings().length === 0) {
           $('#searchAlert').show();
         }
         this.$el.remove();
